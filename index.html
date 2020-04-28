@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>The Single File Philosophy</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Single File Philosophy" />
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset@1.1.0/dist/reset.min.css" />
+  <style>
+    * {
+      font-family: "Georgia";
+    }
+
+    body {
+      font-size: 1.2em;
+      padding: 1em;
+    }
+
+    h1 {
+      font-size: 1.25em;
+    }
+
+    li {
+      margin-bottom: 1em;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      margin: 2em 0;
+    }
+
+    pre,
+    .tag {
+      font-family: monospace;
+    }
+
+    .tag::before {
+      content: "<";
+    }
+
+    .tag::after {
+      content: ">";
+    }
+  </style>
+</head>
+
+<body>
+  <h1>The Single File Philosophy</h1>
+  <p>
+    Given the complexity of the web and how we build it nowadays, sometimes it
+    helps to remember that a single file can be capable of doing incredible
+    things. Create an HTML file, add your markup, maybe augment it with some
+    <span class="tag" role="text">style</span> and
+    <span class="tag" role="text">script</span> tags, and now you have a
+    self-contained and coherent site. How cool is that? The Single File
+    Philosophy focuses on fighting against unnecessary Complexity when it's
+    applicable. Of course, if you're collaborating on applications at Scale or
+    sites that have various Business Requirements, then this philosophy most
+    likely doesn't – and probably shouldn't – apply. However, there are cases
+    where we introduce Complexity to build our single-use web apps or side
+    projects for the sake of Convention. If we take a step back and see the
+    project for What It Is, you may realize that you don't need to follow
+    Convention. Everything you wrote can realistically fit into a lone
+    readable file and nothing more.
+  </p>
+
+  <br />
+
+  <p>
+    Benefits of this approach:
+  </p>
+  <ul>
+    <li>
+      <p>
+        Everything is in one place. There's no need to worry about file
+        structure and attempting to locate Resources, which can be influenced
+        by Personal Preferences.
+      </p>
+    </li>
+    <li>
+      <p>
+        Generally less Tooling. If you can fit everything in a single file
+        without it being a Burden, it's likely that you don't need much
+        Tooling to have it working. Tooling is meant for Optimization and
+        Convenience, whether it's for the Creator or the Result, but it can
+        also be a Barrier. We don't need more Barriers if we can help it.
+      </p>
+    </li>
+    <li>
+      <p>
+        An emphasis on Less Code. If your Intent is to keep a Maintainable
+        project within a single file and limit your use of Tooling, then it's
+        likely that you won't want to write too much to begin with. The
+        Inconvenience is the benefit here. You can do a lot with Less Code,
+        and we should be mindful of how we can make that come to fruition when
+        possible.
+      </p>
+    </li>
+    <li>
+      <p>Portability. Imagine the following conversation:</p>
+      <pre>
+  "Hey I love that site that you built. Would be great to know how you did that!"
+
+  "Thanks! I can send you the file that has everything you need to know. Or you can click View Source and read it."</pre>
+      <p>
+        This is Beautiful. The web is a content-first platform. Why shouldn't
+        the code that it's built on be part of that content too?
+      </p>
+    </li>
+  </ul>
+  <p>
+    Yes, this philosophy is pretty limited, and it will almost always only
+    apply to your small projects that you decided to build over the weekend.
+    However, sometimes it's nice to be reminded of how simple the web can be
+    and how a little can go a long way.
+  </p>
+</body>
+
+</html>
